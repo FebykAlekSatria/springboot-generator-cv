@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "User Management",
+    "description": "documentation for api user management",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Febyk Alek Satria",
+      "email": "febykaleksatria@gmail.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://localhost:8080"
+    }
+  ],
+  "paths": {
+      "/api/user" : {
+        "post": {
+          "description": "Register User",
+          "responses": {
+            "200": {
+              "description": "Success Register",
+              "content": {
+                "application/json" : {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}
