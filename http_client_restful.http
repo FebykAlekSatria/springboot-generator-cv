@@ -1,6 +1,6 @@
 ### Login User
-#POST http://localhost:8080/api/auth/login
-POST https://api-generator-cv.onrender.com/api/auth/login
+POST http://localhost:8080/api/auth/login
+#POST https://api-generator-cv.onrender.com/api/auth/login
 Content-Type: application/json
 
 {
@@ -378,6 +378,7 @@ X-API-TOKEN:{{auth_token}}
 GET https://api-generator-cv.onrender.com/api/experiences
 Content-Type: application/json
 X-API-TOKEN:{{auth_token}}
+
 {
 }
 
@@ -437,6 +438,16 @@ X-API-TOKEN:{{auth_token}}
   "about": "programmer",
   "phone": "081373107544"
 }
+
+
+### Download PDF
+GET http://localhost:8080/api/download/pdf
+#POST https://api-generator-cv.onrender.com/api/auth/login
+#Content-Type: application/json
+X-API-TOKEN:{{auth_token}}
+
+{}
+
 
 
 

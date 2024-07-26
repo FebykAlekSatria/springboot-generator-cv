@@ -21,6 +21,9 @@ configurations {
 
 repositories {
 	mavenCentral()
+//	maven{url "https://jasperreports.sourceforge.net/maven2/"}
+	maven{url "https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/"}
+//	maven{url "https://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/"}
 }
 
 dependencies {
@@ -29,10 +32,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
-//	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+//	implementation group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.8.0'
+	implementation "com.lowagie:itext:2.1.7.js6"
+	implementation 'net.sf.jasperreports:jasperreports:6.8.0'
 }
 
 tasks.named('test') {
