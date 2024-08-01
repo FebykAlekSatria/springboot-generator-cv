@@ -38,6 +38,7 @@ dependencies {
 //	implementation group: 'net.sf.jasperreports', name: 'jasperreports', version: '6.8.0'
 	implementation "com.lowagie:itext:2.1.7.js6"
 	implementation 'net.sf.jasperreports:jasperreports:6.8.0'
+	testImplementation 'org.apache.httpcomponents.client5:httpclient5'
 }
 
 tasks.named('test') {
